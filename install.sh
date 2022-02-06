@@ -3,6 +3,7 @@
 key="sudo apt -y"
 inst="${key} install"
 rem="${key} remove"
+sn="sudo snap install"
 
 #autoremove removes package dependencies
 $key autoremove
@@ -29,3 +30,5 @@ $inst openvpn
 $inst git
 #simplenote
 wget https://github.com/Automattic/simplenote-electron/releases/download/v2.21.0/Simplenote-linux-2.21.0-amd64.deb
+#discord
+$sn discord
