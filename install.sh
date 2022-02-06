@@ -19,6 +19,8 @@ $inst tree
 $rem --purge netcat-openBSD 
 #install netcat
 $inst netcat
+#install nmap
+$inst nmap
 #install curl
 $inst curl
 #install openvpn
