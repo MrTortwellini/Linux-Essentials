@@ -21,6 +21,8 @@ $rem --purge netcat-openBSD
 $inst netcat
 #install curl
 $inst curl
+#install openvpn
+$inst openvpn
 #install git
 $inst git
 #simplenote
