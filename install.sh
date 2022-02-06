@@ -32,3 +32,5 @@ $inst git
 wget https://github.com/Automattic/simplenote-electron/releases/download/v2.21.0/Simplenote-linux-2.21.0-amd64.deb
 #discord
 $sn discord
+#smbclient
+$inst smbclient
