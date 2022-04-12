@@ -34,6 +34,10 @@ $inst gcc
 $inst smbclient
 #terminator
 $inst terminator
+#linpeas
+wget https://github.com/carlospolop/PEASS-ng/releases/download/20220403/linpeas.sh
+#polkit
+wget https://github.com/Almorabea/Polkit-exploit/archive/refs/heads/main.zip
 
 #APPLICATIONS
 
@@ -44,5 +48,7 @@ $inst vlc
 $sn simplenote
 #discord
 $sn discord
+#VMWare
+wget https://www.vmware.com/go/getplayer-linux
 
 
