@@ -50,6 +50,8 @@ $sn simplenote
 $sn discord
 #VMWare
 wget https://www.vmware.com/go/getplayer-linux
+#VMWare components
+vmware-modconfig --console --install-all
 #qbittorrent
 $inst qbittorrent
 
