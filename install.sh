@@ -50,5 +50,6 @@ $sn simplenote
 $sn discord
 #VMWare
 wget https://www.vmware.com/go/getplayer-linux
-
+#qbittorrent
+$inst qbittorrent
 
