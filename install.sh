@@ -41,6 +41,8 @@ wget https://github.com/Almorabea/Polkit-exploit/archive/refs/heads/main.zip
 
 #APPLICATIONS
 
+#redshift (blue light remover)
+$inst redshift
 #vlc media player
 $inst vlc
 #simplenote
