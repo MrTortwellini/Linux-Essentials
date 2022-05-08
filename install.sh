@@ -56,4 +56,5 @@ wget https://www.vmware.com/go/getplayer-linux
 vmware-modconfig --console --install-all
 #qbittorrent
 $inst qbittorrent
-
+#notepad next (notepad++ replacement)
+wget https://github.com/dail8859/NotepadNext.git
