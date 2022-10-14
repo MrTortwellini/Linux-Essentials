@@ -10,7 +10,7 @@ sn="sudo snap install"
 
 #allow make commands
 $inst make
-#Install nikto - Scan webserver for the vulnerability that can be exploited
+#install nikto - scan webserver for the vulnerability that can be exploited
 $inst nikto
 #install tree obviously
 $inst tree
@@ -32,6 +32,10 @@ $inst openvpn
 $inst git
 #gnu compiler collection
 $inst gcc
+#install gobuster
+$inst gobuster
+#install net-tools (includes ifconfig)
+$inst net-tools
 #smbclient
 $inst smbclient
 #terminator
