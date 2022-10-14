@@ -10,6 +10,8 @@ sn="sudo snap install"
 
 #allow make commands
 $inst make
+#Install nikto - Scan webserver for the vulnerability that can be exploited
+$inst nikto
 #install tree obviously
 $inst tree
 #autoremove removes package dependencies
