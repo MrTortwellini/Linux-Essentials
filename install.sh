@@ -36,6 +36,8 @@ $inst gcc
 $inst gobuster
 #install net-tools (includes ifconfig)
 $inst net-tools
+#install redis tools
+$inst redis-tools
 #smbclient
 $inst smbclient
 #terminator
