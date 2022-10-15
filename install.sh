@@ -42,6 +42,9 @@ $inst redis-tools
 $inst smbclient
 #terminator
 $inst terminator
+#enumeration
+$inst wfuzz
+$inst ffuf
 #linpeas (checks for privilege escalation vulnerabilities)
 wget https://github.com/carlospolop/PEASS-ng/releases/download/20220403/linpeas.sh
 #polkit
