@@ -4,6 +4,7 @@ key="sudo apt -y"
 inst="${key} install"
 rem="${key} remove"
 sn="sudo snap install"
+git="git clone "
 
 
 #ESSENTIALS
@@ -67,3 +68,8 @@ wget https://www.vmware.com/go/getplayer-linux
 vmware-modconfig --console --install-all
 #qbittorrent
 $inst qbittorrent
+
+#WORDLISTS
+
+#SecList
+$git https://github.com/MrTortwellini/SecLists
