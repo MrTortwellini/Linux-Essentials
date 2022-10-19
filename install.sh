@@ -33,8 +33,6 @@ $inst openvpn
 $inst git
 #gnu compiler collection
 $inst gcc
-#install gobuster
-$inst gobuster
 #install net-tools (includes ifconfig)
 $inst net-tools
 #install redis tools
@@ -44,6 +42,7 @@ $inst smbclient
 #terminator
 $inst terminator
 #enumeration
+$inst gobuster
 $inst wfuzz
 $inst ffuf
 #linpeas (checks for privilege escalation vulnerabilities)
