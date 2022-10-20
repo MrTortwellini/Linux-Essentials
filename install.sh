@@ -12,8 +12,6 @@ pip="pip install"
 
 #allow make commands
 $inst make
-#install nikto - scan webserver for the vulnerability that can be exploited
-$inst nikto
 #install tree obviously
 $inst tree
 #autoremove removes package dependencies
@@ -42,31 +40,6 @@ $inst redis-tools
 $inst smbclient
 #terminator
 $inst terminator
-#ENUMERATION
-
-#gobuster
-$inst gobuster
-#wfuzz
-$inst wfuzz
-#ffuf
-$inst ffuf
-#altdns
-$git https://github.com/infosec-au/altdns.git
-cd altdns
-$pip -r requirements.txt
-#amass
-$git https://github.com/OWASP/Amass.git
-#assets-from-spf
-$git https://github.com/yamakira/assets-from-spf.git
-$pip click ipwhois
-
-
-#PRIVILEGE AND PERMISSIONS
-
-#linpeas (checks for privilege escalation vulnerabilities)
-wget https://github.com/carlospolop/PEASS-ng/releases/download/20220403/linpeas.sh
-#polkit
-$git https://github.com/Almorabea/Polkit-exploit.git
 
 #APPLICATIONS
 
@@ -94,3 +67,32 @@ $git https://github.com/MrTortwellini/SecLists
 
 
 cd ~
+
+
+#ENUMERATION AND VULNERABILITIES
+
+#install nikto - scan webserver for the vulnerability that can be exploited
+$inst nikto
+#gobuster
+$inst gobuster
+#wfuzz
+$inst wfuzz
+#ffuf
+$inst ffuf
+#altdns
+$git https://github.com/infosec-au/altdns.git
+cd altdns
+$pip -r requirements.txt
+#amass
+$git https://github.com/OWASP/Amass.git
+#assets-from-spf
+$git https://github.com/yamakira/assets-from-spf.git
+$pip click ipwhois
+
+
+#PRIVILEGE AND PERMISSIONS
+
+#linpeas (checks for privilege escalation vulnerabilities)
+wget https://github.com/carlospolop/PEASS-ng/releases/download/20220403/linpeas.sh
+#polkit
+$git https://github.com/Almorabea/Polkit-exploit.git
