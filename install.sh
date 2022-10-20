@@ -4,7 +4,8 @@ key="sudo apt -y"
 inst="${key} install"
 rem="${key} remove"
 sn="sudo snap install"
-git="git clone "
+git="git clone"
+pip="pip install"
 
 
 #ESSENTIALS
@@ -41,14 +42,31 @@ $inst redis-tools
 $inst smbclient
 #terminator
 $inst terminator
-#enumeration
+#ENUMERATION
+
+#gobuster
 $inst gobuster
+#wfuzz
 $inst wfuzz
+#ffuf
 $inst ffuf
+#altdns
+$git https://github.com/infosec-au/altdns.git
+cd altdns
+$pip -r requirements.txt
+#amass
+$git https://github.com/OWASP/Amass.git
+#assets-from-spf
+$git https://github.com/yamakira/assets-from-spf.git
+$pip click ipwhois
+
+
+#PRIVILEGE AND PERMISSIONS
+
 #linpeas (checks for privilege escalation vulnerabilities)
 wget https://github.com/carlospolop/PEASS-ng/releases/download/20220403/linpeas.sh
 #polkit
-wget https://github.com/Almorabea/Polkit-exploit/archive/refs/heads/main.zip
+$git https://github.com/Almorabea/Polkit-exploit.git
 
 #APPLICATIONS
 
@@ -70,5 +88,9 @@ $inst qbittorrent
 
 #WORDLISTS
 
+cd /usr/share/wordlists/
 #SecList
 $git https://github.com/MrTortwellini/SecLists
+
+
+cd ~
