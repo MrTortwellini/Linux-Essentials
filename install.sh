@@ -40,6 +40,8 @@ $inst redis-tools
 $inst smbclient
 #terminator
 $inst terminator
+#awscli (Used to interact with Amazon S3)
+$inst awscli
 
 #APPLICATIONS
 
