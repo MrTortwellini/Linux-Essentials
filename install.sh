@@ -63,7 +63,7 @@ $inst qbittorrent
 
 cd /usr/share/wordlists/
 #SecList
-$git https://github.com/MrTortwellini/SecLists
+$git https://github.com/danielmiessler/SecLists.git
 
 
 cd ~
@@ -75,7 +75,7 @@ cd ~
 $inst nikto
 #gobuster
 $inst gobuster
-#wfuzz
+#wfuzz (wfuzz -c -f text.txt -w subdomains-top1million-5000.txt -u 'http://thetoppers.htb' -H "HOST: FUZZ.thetoppers.htb")
 $inst wfuzz
 #ffuf
 $inst ffuf
