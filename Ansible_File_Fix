@@ -1,1 +1,4 @@
-
+sudo mkdir /etc/ansible
+cd Downloads/ansible/examples/
+sudo mv ansible.cfg /etc/ansible/
+sudo mv hosts /etc/ansible/
