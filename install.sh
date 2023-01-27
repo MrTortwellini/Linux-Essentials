@@ -45,6 +45,13 @@ $inst awscli
 
 #APPLICATIONS
 
+#ansible
+$inst ansible
+$pip ansible
+#ansible patch files
+cd Downloads/
+$git https://github.com/ansible/ansible.git
+cd ~
 #redshift (blue light remover)
 $inst redshift
 #vlc media player
