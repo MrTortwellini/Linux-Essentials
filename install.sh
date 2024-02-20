@@ -97,7 +97,12 @@ $git https://github.com/OWASP/Amass.git
 #assets-from-spf
 $git https://github.com/yamakira/assets-from-spf.git
 $pip click ipwhois
-
+#Responder (Package tracker)
+$inst responder
+#Evil-winrm (Windows Remote Management)
+$inst evil-winrm
+#John The Ripper (Password breaker and hash resolver)
+$inst john
 
 #PRIVILEGE AND PERMISSIONS
 
