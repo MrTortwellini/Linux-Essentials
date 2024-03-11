@@ -9,7 +9,9 @@ pip="pip install"
 
 
 #ESSENTIALS
-
+#install python
+$key install python-pip
+$key install python3-pip
 #allow make commands
 $inst make
 #install tree obviously
