@@ -9,9 +9,11 @@ pip="pip install"
 
 
 #ESSENTIALS
+#install commands (including Strings) from https://www.gnu.org/software/binutils/
+$inst binutils
 #install python
-$key install python-pip
-$key install python3-pip
+$inst python-pip
+$inst python3-pip
 #allow make commands
 $inst make
 #install tree obviously
