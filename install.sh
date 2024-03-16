@@ -9,6 +9,8 @@ pip="pip install"
 
 
 #ESSENTIALS
+#install locate
+$inst plocate
 #install netcat
 $inst ncat
 #install commands (including Strings) from https://www.gnu.org/software/binutils/
