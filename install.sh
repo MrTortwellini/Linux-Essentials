@@ -13,6 +13,12 @@ pip="pip install"
 $inst plocate
 #install netcat
 $inst ncat
+#install netcat
+$inst netcat
+#install nmap
+$inst nmap
+#socat
+$inst socat
 #install commands (including Strings) from https://www.gnu.org/software/binutils/
 $inst binutils
 #install python
@@ -28,10 +34,6 @@ $key autoremove
 $rem --purge parole
 #remove any netcat files
 $rem --purge netcat-openBSD 
-#install netcat
-$inst netcat
-#install nmap
-$inst nmap
 #install curl
 $inst curl
 #install openvpn
