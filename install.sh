@@ -55,6 +55,8 @@ $inst awscli
 
 #APPLICATIONS
 
+#vagrant (https://en.wikipedia.org/wiki/Vagrant_%28software%29)
+$inst vagrant
 #ansible
 $inst ansible
 $pip ansible
@@ -72,11 +74,15 @@ $sn simplenote
 #discord
 $sn discord
 #VMWare
-wget https://www.vmware.com/go/getplayer-linux
+#wget https://www.vmware.com/go/getplayer-linux
 #VMWare components
-vmware-modconfig --console --install-all
+#vmware-modconfig --console --install-all
+#virtualbox
+$inst virtualbox-qt
 #qbittorrent
 $inst qbittorrent
+#vmware2
+#wget https://download3.vmware.com/software/WKST-PLAYER-1702/VMware-Player-Full-17.0.2-21581411.x86_64.bundle
 
 #WORDLISTS
 
