@@ -24,6 +24,10 @@ $inst binutils
 #install python
 $inst python-pip
 $inst python3-pip
+#install beautifulsoup4 (web crawling library for python)
+$pip bs4
+#requests
+$pip requests
 #allow make commands
 $inst make
 #install tree obviously
@@ -110,6 +114,8 @@ cd altdns
 $pip -r requirements.txt
 #amass
 $git https://github.com/OWASP/Amass.git
+#pwnxss (check for xss vulnerabilities)
+$git https://github.com/pwn0sec/PwnXSS
 #assets-from-spf
 $git https://github.com/yamakira/assets-from-spf.git
 $pip click ipwhois
