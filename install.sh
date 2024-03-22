@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#TODO
+#ADD A READ OPTION TO GIVE YOUR USERNAME OR JUST USE 'WHOAMI' COMMAND
+
 key="sudo apt -y"
 inst="${key} install"
 rem="${key} remove"
@@ -38,6 +41,8 @@ $key autoremove
 $rem --purge parole
 #remove any netcat files
 $rem --purge netcat-openBSD 
+#install perl
+$inst perl
 #install curl
 $inst curl
 #install openvpn
@@ -65,7 +70,8 @@ $inst vagrant
 $inst ansible
 $pip ansible
 #ansible patch files
-cd Downloads/
+mkdir ansible
+cd Downloads/ansible
 $git https://github.com/ansible/ansible.git
 cd ~
 #redshift (blue light remover)
@@ -112,10 +118,19 @@ $inst ffuf
 $git https://github.com/infosec-au/altdns.git
 cd altdns
 $pip -r requirements.txt
+cd ~
 #amass
 $git https://github.com/OWASP/Amass.git
 #pwnxss (check for xss vulnerabilities)
+mkdir pwnxss
+cd pwnxss
 $git https://github.com/pwn0sec/PwnXSS
+cd ~
+#dotdotpwn (check for directory traversal vulnerabilities)
+mkdir dotdotpwn
+cd dotdotpwn
+$git https://github.com/wireghoul/dotdotpwn.git
+cd ~
 #assets-from-spf
 $git https://github.com/yamakira/assets-from-spf.git
 $pip click ipwhois
