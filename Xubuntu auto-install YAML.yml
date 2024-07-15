@@ -1,0 +1,35 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: xubuntu-autoinstall
+    password: "$6$rounds=4096$3bDl3EJHXvcs1RnH$Zv8iHDCj3MIcr/FUwVu.5b2bBYOiyd7K.eFVbKn3Rt31UzrdxZsq5XHr0KPNoXDXNPKKfqZJxg3Q3m2AxCebK1"
+    username: xubuntu-user
+  keyboard:
+    layout: us
+  locale: en_US
+  storage:
+    layout:
+      name: lvm
+  packages:
+    - xubuntu-desktop
+  user-data:
+    disable_root: false
+  ssh:
+    install-server: true
+  network:
+    network:
+      version: 2
+      ethernets:
+        eth0:
+          dhcp4: true
+  late-commands:
+    - curtin in-target --target=/target -- apt-get -y install tasksel
+    - curtin in-target --target=/target -- tasksel install xubuntu-desktop
+  apt:
+    primary:
+      - arches: [default]
+        uri: http://archive.ubuntu.com/ubuntu
+    security:
+      - arches: [default]
+        uri: http://security.ubuntu.com/ubuntu
