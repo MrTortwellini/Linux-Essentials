@@ -12,6 +12,8 @@ pip="pip install"
 
 
 #ESSENTIALS
+#install dns utilities
+$inst dnsutils
 #install locate
 $inst plocate
 #install netcat
